@@ -41,9 +41,11 @@ async function getWeatherData() {
         document.getElementById('pPrecipitation').innerHTML = objApiJson.current.precipitation + ' ' + objApiJson.current_units.precipitation
         if (objApiJson.current.weather_code >= 2) {
             document.getElementById('imgPrecipitation').src = 'img/partly-cloudy.svg'
+            document.getElementById('imgPrecipitation').alt = 'Partly Cloudy'
         }
         if (objApiJson.current.weather_code >= 51) {
             document.getElementById('imgPrecipitation').src = 'img/rainy.svg'
+            document.getElementById('imgPrecipitation').src = 'Raining'
         }
 
     } catch(objError) {
