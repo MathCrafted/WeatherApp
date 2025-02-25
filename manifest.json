@@ -2,9 +2,11 @@
   "name": "Weather App",
   "icons": [
     {
-      "src": "icons/sunny.svg"
+      "src": "icons/sunny.svg",
+      "sizes": "any",
+      "type": "image/svg"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "../index.html",
   "display": "standalone"
 }
